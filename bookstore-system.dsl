@@ -9,7 +9,7 @@ workspace {
 
         # Level 1: Software Systems
         # <variable> = softwareSystem <name> <description> <tag>
-        bookstoreSystem = softwareSystem "iBookstore System of Chau" "Allows users to view about book, and administrate the book details" "Target System" {
+        bookstoreSystem = softwareSystem "iBookstore System" "Allows users to view about book, and administrate the book details" "Target System" {
             # Level 2: Containers
             # <variable> = container <name> <description> <technology> <tag>
             frontStoreApp = container "Front-store Application" "Provide all the bookstore functionalities to both public and authorized users" "Javascript & ReactJS"
@@ -105,10 +105,9 @@ workspace {
             autoLayout
         }
 
-
-
         styles {
-            element "Software System" {
+            # element <tag> {}
+            element "Target System" {
                 background #1168bd
                 color #ffffff
             }
